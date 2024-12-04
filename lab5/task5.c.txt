@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main(){
+    int a;
+    int k;
+    int size=32;
+    printf("enter num: ");
+    scanf("%d%d", &a, &k);
+    k = k % size;
+    int f;
+    f = a << k;
+    int n;
+    n = a >> (size - k);
+    printf("%d\n", f|n);
+}
