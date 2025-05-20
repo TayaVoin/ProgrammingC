@@ -1,0 +1,4 @@
+/mnt/c/Users/i20/Desktop/vs/prog/sort_project/CMakeFiles/student.dir
+/mnt/c/Users/i20/Desktop/vs/prog/sort_project/CMakeFiles/student_program.dir
+/mnt/c/Users/i20/Desktop/vs/prog/sort_project/CMakeFiles/edit_cache.dir
+/mnt/c/Users/i20/Desktop/vs/prog/sort_project/CMakeFiles/rebuild_cache.dir

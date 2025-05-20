@@ -1,0 +1,2 @@
+/usr/bin/ar qc libstudent.a CMakeFiles/student.dir/student_utils.c.o CMakeFiles/student.dir/sort_algs.c.o
+/usr/bin/ranlib libstudent.a
