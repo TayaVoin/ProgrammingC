@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/common.h
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+time.h
+-
+jansson.h
+-
+
+../include/stats.h
+
+../include/training.h
+
+/mnt/c/Users/Egor/Desktop/make/rgr/src/main.c
+common.h
+/mnt/c/Users/Egor/Desktop/make/rgr/src/common.h
+stats.h
+/mnt/c/Users/Egor/Desktop/make/rgr/src/stats.h
+training.h
+/mnt/c/Users/Egor/Desktop/make/rgr/src/training.h
+
+/mnt/c/Users/Egor/Desktop/make/rgr/src/stats.c
+common.h
+/mnt/c/Users/Egor/Desktop/make/rgr/src/common.h
+stats.h
+/mnt/c/Users/Egor/Desktop/make/rgr/src/stats.h
+
+/mnt/c/Users/Egor/Desktop/make/rgr/src/training.c
+common.h
+/mnt/c/Users/Egor/Desktop/make/rgr/src/common.h
+training.h
+/mnt/c/Users/Egor/Desktop/make/rgr/src/training.h
+
