@@ -1,7 +1,0 @@
-all: geometry
-
-geometry:
- gcc main.c geometry.c -o geometry -lm
-
-clean:
- rm -rf *.o geometry
