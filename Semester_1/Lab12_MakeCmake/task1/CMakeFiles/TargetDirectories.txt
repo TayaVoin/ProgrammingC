@@ -1,0 +1,9 @@
+/media/student/Gosha/Практика 12/task1/build/CMakeFiles/main.dir
+/media/student/Gosha/Практика 12/task1/build/CMakeFiles/edit_cache.dir
+/media/student/Gosha/Практика 12/task1/build/CMakeFiles/rebuild_cache.dir
+/media/student/Gosha/Практика 12/task1/build/background/CMakeFiles/background.dir
+/media/student/Gosha/Практика 12/task1/build/background/CMakeFiles/edit_cache.dir
+/media/student/Gosha/Практика 12/task1/build/background/CMakeFiles/rebuild_cache.dir
+/media/student/Gosha/Практика 12/task1/build/pipes/CMakeFiles/pipes.dir
+/media/student/Gosha/Практика 12/task1/build/pipes/CMakeFiles/edit_cache.dir
+/media/student/Gosha/Практика 12/task1/build/pipes/CMakeFiles/rebuild_cache.dir
