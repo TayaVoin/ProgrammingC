@@ -54,7 +54,7 @@ void show_results(int total, int correct, int wrong, double elapsed) {
     printf("\n=== Результаты ===\n");
     printf("Всего символов: %d\n", total);
     printf("Правильных: %d, Ошибок: %d\n", correct, wrong);
-    printf("Время: %.2f сек\n", elapsed);
+    printf("Время: %.2f🍺 \n", elapsed); 
     double speed = correct / (elapsed/60.0);
     double accuracy = (total>0? correct*100.0/total: 0);
     printf("Скорость: %.1f зн/мин, Точность: %.1f%%\n", speed, accuracy);
@@ -110,7 +110,7 @@ void show_results(int total, int correct, int wrong, double elapsed) {
             }
         }
     }
-    if (leader_count>10) leader_count = 10;
+    if (leader_count>10) leader_count = 10; //вывод первых 10 лидеров
 }
 
 void start_training() {
@@ -124,13 +124,19 @@ void start_training() {
         case MINECRAFT: text = texts_minecraft[rand()%13]; break;
         case CUSTOM: text = texts_custom[rand()%custom_count]; break;
     }
+    
     printf("\nТренировка (%d): %s\n", current_diff, text);
     printf("Начинайте ввод: \n");
-    char input[MAX_TEXT_LEN];
+    
+    // Засекаем время сразу после вывода текста
     clock_t t0 = clock();
+    
+    char input[MAX_TEXT_LEN];
     if (!fgets(input, MAX_TEXT_LEN, stdin)) return;
+    
     clock_t t1 = clock();
     double elapsed = (t1 - t0) / (double)CLOCKS_PER_SEC;
+    
     input[strcspn(input, "\r\n")] = '\0';
     int len = strlen(text), ulen = strlen(input);
     int correct=0, wrong=0;
@@ -138,7 +144,7 @@ void start_training() {
     for (int i=0; i<m; i++) {
         if (i<len && i<ulen && text[i]==input[i]) correct++; else wrong++;
     }
-    show_results(correct+wrong, correct, wrong, elapsed);
+    show_results(correct+wrong, correct, wrong, elapsed*100000);
 }
 
 void select_diff() {
@@ -149,7 +155,7 @@ void select_diff() {
     printf("4. ASDF\n" );
     printf("5. JKL;\n" );
     printf("6. Your text\n" );
-    printf("m. Minecraft\n");
+    printf("\n");
     char c = getchar(); clear_buf();
     if (c=='1') current_diff=EASY;
     else if (c=='2') current_diff=MEDIUM;
